@@ -1,0 +1,79 @@
+Link document: https://docs.google.com/spreadsheets/d/1s5dUBLSmWNpcJ8m_mxkx6BF6QEkwebkeEQBBYBuwcv8/edit?usp=sharing
+
+1. As a user, I want to create a public gist.
+	Precondition : Account has been registered on github.
+		       Already Login to Github
+	Test Scenario: Test case 1 (+)
+			   - Sign in to gist github
+			   - Click on the + icon visible at the top right
+			   - Input Gist Description
+			   - Input File name with the extensions (.js, txt, etc)
+			   - Write code in text area or add file code with click add file button
+			   - Choose create public gist and  then click teh button.
+			    Test case 2
+			   - Sign in to gist github
+			   - Click on the + icon visible at the top right and clik new gist
+			   - leave the gist description blank
+			   - Input File name with the extensions (.js, txt, etc)
+			   - Write code in text area or add file code with click add file button
+			   - Choose create public gist and  then click teh button.
+			    Test case 3
+			   - Sign in to gist github
+			   - Input Gist Description
+			   - Leave the File name with the extensions (.js, txt, etc) blank.
+			   - Write code in text area or add file code with click add file button
+			   - Choose create public gist and  then click the button.
+			    Test case 4
+			   - Sign in to gist github
+			   - Input Gist Description
+			   - Input File name with the extensions (.js, txt, etc)
+			   - leave the text area blank or don't add file code with click add file button
+			   - Choose create public gist and  then click the button.
+		       - On the page, a notification appears 'Contents can be Empty'.
+			   - Click the button 'create Public Gist'.
+
+2. As a user, I want to edit an existing gist.
+	Precondition : 1. Account has been registered on github.
+		       2. Public Gist has been created.
+	Test Scenario: Test case 1 (+)
+				- Sign in to gist github
+				- Click profile button and click Your Gist
+				- Check 'All gist' 
+				- Click the gist that want to edit
+				- Click the "Edit" button on right up page
+				- Edit Gist (Name, Contents, File).
+				- Click 'Update Public Gist' button.
+			   Test Case 2 (-)
+				- Sign in to gist github
+				- Click profile button and click Your Gist
+				- Check 'All gist' 
+				- Click the gist that want to edit.
+				- Click the "Edit" button on right up page
+				- Edit Gist (Name, Contents, File).
+				- Click 'cancel' button.
+
+3. As a user, I want to delete an existing gist.
+	Precondition : 1. Account has been registered on github.
+		       2. Public Gist has been created.
+	Test Scenario: Test case 1 (+)
+				- Sign in to gist github
+				- Click profile button and click Your Gist
+				- Check 'All gist' 
+				- Choose the file/folder gist and then click.
+				- Click "Delete" button on right up page.
+				- Click "ok" button on the pop up the gist.Github.
+			   Test case 2 (+)
+				- Sign in to gist github
+				- Click profile button and click Your Gist
+				- Check 'All gist' 
+				- Choose the file/folder gist and then click.
+				- Click "Edit" button on right up page
+				- Click "Delete" button on right up page.
+				- Click "ok" button on the pop up the gist.Github.
+			   Test case 3 (-)
+				- Sign in to gist github
+				- Click profile button and click Your Gist
+				- Check 'All gist' 
+				- Choose the file/folder gist and then click.
+				- Click "Delete" button on right up page.
+				- Click "cancel" button on the pop up the gist.Github.
